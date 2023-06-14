@@ -1,0 +1,2146 @@
+    Blocking waiting for file lock on build directory
+   Compiling rust-kanban v0.6.5 (/home/horryportier/Documents/repos/rust_kanban)
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+   --> src/ui/ui_helper.rs:135:24
+    |
+135 |     rect.render_widget(log, chunks[1]);
+    |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+    |          |
+    |          required by a bound introduced by this call
+    |
+    = help: the following other types implement trait `Widget`:
+              BarChart<'a>
+              Canvas<'a, F>
+              Chart<'a>
+              Gauge<'a>
+              LineGauge<'a>
+              List<'a>
+              Paragraph<'a>
+              Sparkline<'a>
+            and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+   --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+    |
+88  |         W: Widget,
+    |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+   --> src/ui/ui_helper.rs:231:24
+    |
+231 |     rect.render_widget(log, chunks[2]);
+    |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+    |          |
+    |          required by a bound introduced by this call
+    |
+    = help: the following other types implement trait `Widget`:
+              BarChart<'a>
+              Canvas<'a, F>
+              Chart<'a>
+              Gauge<'a>
+              LineGauge<'a>
+              List<'a>
+              Paragraph<'a>
+              Sparkline<'a>
+            and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+   --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+    |
+88  |         W: Widget,
+    |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+   --> src/ui/ui_helper.rs:284:24
+    |
+284 |     rect.render_widget(log, chunks[2]);
+    |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+    |          |
+    |          required by a bound introduced by this call
+    |
+    = help: the following other types implement trait `Widget`:
+              BarChart<'a>
+              Canvas<'a, F>
+              Chart<'a>
+              Gauge<'a>
+              LineGauge<'a>
+              List<'a>
+              Paragraph<'a>
+              Sparkline<'a>
+            and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+   --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+    |
+88  |         W: Widget,
+    |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+   --> src/ui/ui_helper.rs:348:24
+    |
+348 |     rect.render_widget(log, chunks[3]);
+    |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+    |          |
+    |          required by a bound introduced by this call
+    |
+    = help: the following other types implement trait `Widget`:
+              BarChart<'a>
+              Canvas<'a, F>
+              Chart<'a>
+              Gauge<'a>
+              LineGauge<'a>
+              List<'a>
+              Paragraph<'a>
+              Sparkline<'a>
+            and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+   --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+    |
+88  |         W: Widget,
+    |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+   --> src/ui/ui_helper.rs:491:24
+    |
+491 |     rect.render_widget(log, chunks[4]);
+    |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+    |          |
+    |          required by a bound introduced by this call
+    |
+    = help: the following other types implement trait `Widget`:
+              BarChart<'a>
+              Canvas<'a, F>
+              Chart<'a>
+              Gauge<'a>
+              LineGauge<'a>
+              List<'a>
+              Paragraph<'a>
+              Sparkline<'a>
+            and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+   --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+    |
+88  |         W: Widget,
+    |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+   --> src/ui/ui_helper.rs:635:24
+    |
+635 |     rect.render_widget(log, chunks[2]);
+    |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+    |          |
+    |          required by a bound introduced by this call
+    |
+    = help: the following other types implement trait `Widget`:
+              BarChart<'a>
+              Canvas<'a, F>
+              Chart<'a>
+              Gauge<'a>
+              LineGauge<'a>
+              List<'a>
+              Paragraph<'a>
+              Sparkline<'a>
+            and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+   --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+    |
+88  |         W: Widget,
+    |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+    --> src/ui/ui_helper.rs:1117:28
+     |
+1117 |         rect.render_widget(log, chunks[2]);
+     |              ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+     |              |
+     |              required by a bound introduced by this call
+     |
+     = help: the following other types implement trait `Widget`:
+               BarChart<'a>
+               Canvas<'a, F>
+               Chart<'a>
+               Gauge<'a>
+               LineGauge<'a>
+               List<'a>
+               Paragraph<'a>
+               Sparkline<'a>
+             and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+     |
+88   |         W: Widget,
+     |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+    --> src/ui/ui_helper.rs:1201:24
+     |
+1201 |     rect.render_widget(log, chunks[3]);
+     |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+     |          |
+     |          required by a bound introduced by this call
+     |
+     = help: the following other types implement trait `Widget`:
+               BarChart<'a>
+               Canvas<'a, F>
+               Chart<'a>
+               Gauge<'a>
+               LineGauge<'a>
+               List<'a>
+               Paragraph<'a>
+               Sparkline<'a>
+             and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+     |
+88   |         W: Widget,
+     |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+    --> src/ui/ui_helper.rs:1245:24
+     |
+1245 |     rect.render_widget(log, chunks[1]);
+     |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+     |          |
+     |          required by a bound introduced by this call
+     |
+     = help: the following other types implement trait `Widget`:
+               BarChart<'a>
+               Canvas<'a, F>
+               Chart<'a>
+               Gauge<'a>
+               LineGauge<'a>
+               List<'a>
+               Paragraph<'a>
+               Sparkline<'a>
+             and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+     |
+88   |         W: Widget,
+     |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0277]: the trait bound `TuiLoggerWidget<'_>: Widget` is not satisfied
+    --> src/ui/ui_helper.rs:1260:24
+     |
+1260 |     rect.render_widget(log, chunks[0]);
+     |          ------------- ^^^ the trait `Widget` is not implemented for `TuiLoggerWidget<'_>`
+     |          |
+     |          required by a bound introduced by this call
+     |
+     = help: the following other types implement trait `Widget`:
+               BarChart<'a>
+               Canvas<'a, F>
+               Chart<'a>
+               Gauge<'a>
+               LineGauge<'a>
+               List<'a>
+               Paragraph<'a>
+               Sparkline<'a>
+             and 4 others
+note: required by a bound in `Frame::<'a, B>::render_widget`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/terminal.rs:88:12
+     |
+88   |         W: Widget,
+     |            ^^^^^^ required by this bound in `Frame::<'a, B>::render_widget`
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1463:26
+     |
+1463 |             .style_error(app.theme.inactive_text_style)
+     |              ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:971:12
+     |
+971  |     pub fn style_error(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1464:26
+     |
+1464 |             .style_debug(app.theme.inactive_text_style)
+     |              ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:987:12
+     |
+987  |     pub fn style_debug(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1465:25
+     |
+1465 |             .style_warn(app.theme.inactive_text_style)
+     |              ---------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:975:12
+     |
+975  |     pub fn style_warn(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1466:26
+     |
+1466 |             .style_trace(app.theme.inactive_text_style)
+     |              ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:983:12
+     |
+983  |     pub fn style_trace(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1467:25
+     |
+1467 |             .style_info(app.theme.inactive_text_style)
+     |              ---------- ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:979:12
+     |
+979  |     pub fn style_info(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1472:17
+     |
+1471 |               .block(
+     |                ----- arguments to this method are incorrect
+1472 | /                 Block::default()
+1473 | |                     .title("Logs")
+1474 | |                     .style(logbox_style)
+1475 | |                     .border_style(logbox_border_style)
+1476 | |                     .borders(Borders::ALL)
+1477 | |                     .border_type(BorderType::Rounded),
+     | |_____________________________________________________^ expected `tui::widgets::block::Block<'_>`, found `ratatui::widgets::Block<'_>`
+     |
+     = note: `ratatui::widgets::Block<'_>` and `tui::widgets::block::Block<'_>` have similar names, but are actually distinct types
+note: `ratatui::widgets::Block<'_>` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/widgets/block.rs:100:1
+     |
+100  | pub struct Block<'a> {
+     | ^^^^^^^^^^^^^^^^^^^^
+note: `tui::widgets::block::Block<'_>` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/widgets/block.rs:45:1
+     |
+45   | pub struct Block<'a> {
+     | ^^^^^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:927:12
+     |
+927  |     pub fn block(mut self, block: Block<'b>) -> Self {
+     |            ^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1481:26
+     |
+1481 |             .style_error(app.theme.log_error_style)
+     |              ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:971:12
+     |
+971  |     pub fn style_error(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1482:26
+     |
+1482 |             .style_debug(app.theme.log_debug_style)
+     |              ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:987:12
+     |
+987  |     pub fn style_debug(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1483:25
+     |
+1483 |             .style_warn(app.theme.log_warn_style)
+     |              ---------- ^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:975:12
+     |
+975  |     pub fn style_warn(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1484:26
+     |
+1484 |             .style_trace(app.theme.log_trace_style)
+     |              ----------- ^^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:983:12
+     |
+983  |     pub fn style_trace(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1485:25
+     |
+1485 |             .style_info(app.theme.log_info_style)
+     |              ---------- ^^^^^^^^^^^^^^^^^^^^^^^^ expected `tui::style::Style`, found `Style`
+     |              |
+     |              arguments to this method are incorrect
+     |
+     = note: `Style` and `tui::style::Style` have similar names, but are actually distinct types
+note: `Style` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/style.rs:121:1
+     |
+121  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: `tui::style::Style` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/style.rs:120:1
+     |
+120  | pub struct Style {
+     | ^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:979:12
+     |
+979  |     pub fn style_info(mut self, style: Style) -> Self {
+     |            ^^^^^^^^^^
+
+error[E0308]: mismatched types
+    --> src/ui/ui_helper.rs:1490:17
+     |
+1489 |               .block(
+     |                ----- arguments to this method are incorrect
+1490 | /                 Block::default()
+1491 | |                     .title("Logs")
+1492 | |                     .style(logbox_style)
+1493 | |                     .border_style(logbox_border_style)
+1494 | |                     .borders(Borders::ALL)
+1495 | |                     .border_type(BorderType::Rounded),
+     | |_____________________________________________________^ expected `tui::widgets::block::Block<'_>`, found `ratatui::widgets::Block<'_>`
+     |
+     = note: `ratatui::widgets::Block<'_>` and `tui::widgets::block::Block<'_>` have similar names, but are actually distinct types
+note: `ratatui::widgets::Block<'_>` is defined in crate `ratatui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/ratatui-0.21.0/src/widgets/block.rs:100:1
+     |
+100  | pub struct Block<'a> {
+     | ^^^^^^^^^^^^^^^^^^^^
+note: `tui::widgets::block::Block<'_>` is defined in crate `tui`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-0.19.0/src/widgets/block.rs:45:1
+     |
+45   | pub struct Block<'a> {
+     | ^^^^^^^^^^^^^^^^^^^^
+note: method defined here
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/tui-logger-0.9.2/src/lib.rs:927:12
+     |
+927  |     pub fn block(mut self, block: Block<'b>) -> Self {
+     |            ^^^^^
+
+error[E0609]: no field `0` on type `&ratatui::text::Line<'_>`
+    --> src/ui/ui_helper.rs:3693:40
+     |
+3693 |                         for _ in spans.0.iter() {
+     |                                        ^ unknown field
+     |
+     = note: available fields are: `spans`, `alignment`
+
+error[E0609]: no field `0` on type `&ratatui::text::Line<'_>`
+    --> src/ui/ui_helper.rs:3697:53
+     |
+3697 | ...                   let element = spans.0.get(counter - prv_spans_length);
+     |                                           ^ unknown field
+     |
+     = note: available fields are: `spans`, `alignment`
+
+error[E0609]: no field `0` on type `&ratatui::text::Line<'_>`
+    --> src/ui/ui_helper.rs:3708:51
+     |
+3708 |                         prv_spans_length += spans.0.iter().len();
+     |                                                   ^ unknown field
+     |
+     = note: available fields are: `spans`, `alignment`
+
+error[E0609]: no field `0` on type `&ratatui::text::Line<'_>`
+    --> src/ui/ui_helper.rs:3731:40
+     |
+3731 |                         for _ in spans.0.iter() {
+     |                                        ^ unknown field
+     |
+     = note: available fields are: `spans`, `alignment`
+
+error[E0609]: no field `0` on type `&ratatui::text::Line<'_>`
+    --> src/ui/ui_helper.rs:3735:53
+     |
+3735 | ...                   let element = spans.0.get(counter - prv_spans_length);
+     |                                           ^ unknown field
+     |
+     = note: available fields are: `spans`, `alignment`
+
+error[E0609]: no field `0` on type `&ratatui::text::Line<'_>`
+    --> src/ui/ui_helper.rs:3746:51
+     |
+3746 |                         prv_spans_length += spans.0.iter().len();
+     |                                                   ^ unknown field
+     |
+     = note: available fields are: `spans`, `alignment`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Serialize` is not satisfied
+    --> src/ui/mod.rs:26:10
+     |
+26   | #[derive(Serialize, Deserialize, Debug, Clone)]
+     |          ^^^^^^^^^ the trait `app::_::_serde::Serialize` is not implemented for `Style`
+...
+29   |     pub general_style: Style,
+     |     --- required by a bound introduced by this call
+     |
+     = help: the following other types implement trait `app::_::_serde::Serialize`:
+               &'a T
+               &'a mut T
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+               (T0, T1, T2, T3, T4, T5)
+             and 142 others
+note: required by a bound in `app::_::_serde::ser::SerializeStruct::serialize_field`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/ser/mod.rs:1901:12
+     |
+1901 |         T: Serialize;
+     |            ^^^^^^^^^ required by this bound in `SerializeStruct::serialize_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:29:24
+     |
+29   |     pub general_style: Style,
+     |                        ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:30:28
+     |
+30   |     pub list_select_style: Style,
+     |                            ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:31:33
+     |
+31   |     pub card_due_default_style: Style,
+     |                                 ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:32:33
+     |
+32   |     pub card_due_warning_style: Style,
+     |                                 ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:33:33
+     |
+33   |     pub card_due_overdue_style: Style,
+     |                                 ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:34:35
+     |
+34   |     pub card_status_active_style: Style,
+     |                                   ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:35:38
+     |
+35   |     pub card_status_completed_style: Style,
+     |                                      ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:36:34
+     |
+36   |     pub card_status_stale_style: Style,
+     |                                  ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:37:31
+     |
+37   |     pub keyboard_focus_style: Style,
+     |                               ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:38:28
+     |
+38   |     pub mouse_focus_style: Style,
+     |                            ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:39:25
+     |
+39   |     pub help_key_style: Style,
+     |                         ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:40:26
+     |
+40   |     pub help_text_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:41:26
+     |
+41   |     pub log_error_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:42:26
+     |
+42   |     pub log_debug_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:43:25
+     |
+43   |     pub log_warn_style: Style,
+     |                         ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:44:26
+     |
+44   |     pub log_trace_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:45:25
+     |
+45   |     pub log_info_style: Style,
+     |                         ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:46:29
+     |
+46   |     pub progress_bar_style: Style,
+     |                             ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:47:27
+     |
+47   |     pub error_text_style: Style,
+     |                           ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:48:30
+     |
+48   |     pub inactive_text_style: Style,
+     |                              ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:49:34
+     |
+49   |     pub card_priority_low_style: Style,
+     |                                  ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:50:37
+     |
+50   |     pub card_priority_medium_style: Style,
+     |                                     ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:51:35
+     |
+51   |     pub card_priority_high_style: Style,
+     |                                   ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_element`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1729:12
+     |
+1729 |         T: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `SeqAccess::next_element`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:29:24
+     |
+29   |     pub general_style: Style,
+     |                        ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:30:28
+     |
+30   |     pub list_select_style: Style,
+     |                            ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:31:33
+     |
+31   |     pub card_due_default_style: Style,
+     |                                 ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:32:33
+     |
+32   |     pub card_due_warning_style: Style,
+     |                                 ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:33:33
+     |
+33   |     pub card_due_overdue_style: Style,
+     |                                 ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:34:35
+     |
+34   |     pub card_status_active_style: Style,
+     |                                   ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:35:38
+     |
+35   |     pub card_status_completed_style: Style,
+     |                                      ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:36:34
+     |
+36   |     pub card_status_stale_style: Style,
+     |                                  ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:37:31
+     |
+37   |     pub keyboard_focus_style: Style,
+     |                               ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:38:28
+     |
+38   |     pub mouse_focus_style: Style,
+     |                            ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:39:25
+     |
+39   |     pub help_key_style: Style,
+     |                         ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:40:26
+     |
+40   |     pub help_text_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:41:26
+     |
+41   |     pub log_error_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:42:26
+     |
+42   |     pub log_debug_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:43:25
+     |
+43   |     pub log_warn_style: Style,
+     |                         ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:44:26
+     |
+44   |     pub log_trace_style: Style,
+     |                          ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:45:25
+     |
+45   |     pub log_info_style: Style,
+     |                         ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:46:29
+     |
+46   |     pub progress_bar_style: Style,
+     |                             ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:47:27
+     |
+47   |     pub error_text_style: Style,
+     |                           ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:48:30
+     |
+48   |     pub inactive_text_style: Style,
+     |                              ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:49:34
+     |
+49   |     pub card_priority_low_style: Style,
+     |                                  ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:50:37
+     |
+50   |     pub card_priority_medium_style: Style,
+     |                                     ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+    --> src/ui/mod.rs:51:35
+     |
+51   |     pub card_priority_high_style: Style,
+     |                                   ^^^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+     |
+     = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+               &'a Path
+               &'a [u8]
+               &'a str
+               ()
+               (T0, T1)
+               (T0, T1, T2)
+               (T0, T1, T2, T3)
+               (T0, T1, T2, T3, T4)
+             and 145 others
+note: required by a bound in `next_value`
+    --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/de/mod.rs:1868:12
+     |
+1868 |         V: Deserialize<'de>,
+     |            ^^^^^^^^^^^^^^^^ required by this bound in `MapAccess::next_value`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:29:5
+   |
+29 |     pub general_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:30:5
+   |
+30 |     pub list_select_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:31:5
+   |
+31 |     pub card_due_default_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:32:5
+   |
+32 |     pub card_due_warning_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:33:5
+   |
+33 |     pub card_due_overdue_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:34:5
+   |
+34 |     pub card_status_active_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:35:5
+   |
+35 |     pub card_status_completed_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:36:5
+   |
+36 |     pub card_status_stale_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:37:5
+   |
+37 |     pub keyboard_focus_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:38:5
+   |
+38 |     pub mouse_focus_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:39:5
+   |
+39 |     pub help_key_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:40:5
+   |
+40 |     pub help_text_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:41:5
+   |
+41 |     pub log_error_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:42:5
+   |
+42 |     pub log_debug_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:43:5
+   |
+43 |     pub log_warn_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:44:5
+   |
+44 |     pub log_trace_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:45:5
+   |
+45 |     pub log_info_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:46:5
+   |
+46 |     pub progress_bar_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:47:5
+   |
+47 |     pub error_text_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:48:5
+   |
+48 |     pub inactive_text_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:49:5
+   |
+49 |     pub card_priority_low_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:50:5
+   |
+50 |     pub card_priority_medium_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+error[E0277]: the trait bound `Style: app::_::_serde::Deserialize<'_>` is not satisfied
+  --> src/ui/mod.rs:51:5
+   |
+51 |     pub card_priority_high_style: Style,
+   |     ^^^ the trait `app::_::_serde::Deserialize<'_>` is not implemented for `Style`
+   |
+   = help: the following other types implement trait `app::_::_serde::Deserialize<'de>`:
+             &'a Path
+             &'a [u8]
+             &'a str
+             ()
+             (T0, T1)
+             (T0, T1, T2)
+             (T0, T1, T2, T3)
+             (T0, T1, T2, T3, T4)
+           and 145 others
+note: required by a bound in `app::_::_serde::__private::de::missing_field`
+  --> /home/horryportier/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.164/src/private/de.rs:22:8
+   |
+22 |     V: Deserialize<'de>,
+   |        ^^^^^^^^^^^^^^^^ required by this bound in `missing_field`
+
+Some errors have detailed explanations: E0277, E0308, E0609.
+For more information about an error, try `rustc --explain E0277`.
+error: could not compile `rust-kanban` due to 98 previous errors

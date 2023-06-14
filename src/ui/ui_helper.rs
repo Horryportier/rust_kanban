@@ -4,9 +4,9 @@ use ratatui::{
     backend::Backend,
     layout::{Alignment, Constraint, Direction, Layout, Rect},
     style::Style,
-    text::{Span, Spans},
+    text::{Span, Line},
     widgets::{
-        Block, BorderType, Borders, Cell, Clear, Gauge, List, ListItem, Paragraph, Row, Table,
+         BorderType, Borders, Cell, Clear, Gauge, List, ListItem, Paragraph, Row, Table, Block, 
     },
     Frame,
 };
@@ -595,7 +595,7 @@ where
     };
     let paragraph_text = format!("Current Value is {}\n\n{}",config_item_value,
         "Press 'i' to edit, or 'Esc' to cancel, Press 'Ins' to stop editing and press 'Enter' on Submit to save");
-    let paragraph_title = Spans::from(vec![Span::raw(config_item_name)]);
+    let paragraph_title = Line::from(vec![Span::raw(config_item_name)]);
     let config_item = Paragraph::new(paragraph_text)
         .block(
             Block::default()
@@ -726,7 +726,7 @@ where
         .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
         .clone();
 
-    let help_spans = Spans::from(vec![
+    let help_spans = Line::from(vec![
         Span::styled("Use ", app.theme.help_text_style),
         Span::styled(up_key, app.theme.help_key_style),
         Span::styled("or ", app.theme.help_text_style),
@@ -939,7 +939,7 @@ where
         .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
         .clone();
 
-    let edit_keybind_help_spans = Spans::from(vec![
+    let edit_keybind_help_spans = Line::from(vec![
         Span::styled("Use ", help_text_style),
         Span::styled(up_key, help_key_style),
         Span::styled("and ", help_text_style),
@@ -1393,7 +1393,7 @@ fn draw_config_help<'a>(focus: &'a Focus, popup_mode: bool, app: &'a App) -> Par
         .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
         .clone();
 
-    let help_spans = Spans::from(vec![
+    let help_spans = Line::from(vec![
         Span::styled("Use ", help_text_style),
         Span::styled(up_key, help_key_style),
         Span::styled("and ", help_text_style),
@@ -1889,15 +1889,15 @@ where
                 card.description.clone()
             };
 
-            let mut card_extra_info = vec![Spans::from("")];
+            let mut card_extra_info = vec![Line::from("")];
             if card.date_due == FIELD_NOT_SET {
                 if app.state.popup_mode.is_some() {
-                    card_extra_info.push(Spans::from(Span::styled(
+                    card_extra_info.push(Line::from(Span::styled(
                         format!("Due: {}", FIELD_NOT_SET),
                         app.theme.inactive_text_style,
                     )))
                 } else {
-                    card_extra_info.push(Spans::from(Span::styled(
+                    card_extra_info.push(Line::from(Span::styled(
                         format!("Due: {}", FIELD_NOT_SET),
                         app.theme.card_due_default_style,
                     )))
@@ -1908,13 +1908,13 @@ where
                     date_format_converter(card_due_date.trim(), app.config.date_format);
                 let card_due_date_styled = if let Ok(parsed_due_date) = parsed_due_date {
                     if app.state.popup_mode.is_some() {
-                        Spans::from(Span::styled(
+                        Line::from(Span::styled(
                             format!("Due: {}", parsed_due_date),
                             app.theme.inactive_text_style,
                         ))
                     } else {
                         if parsed_due_date == FIELD_NOT_SET || parsed_due_date.is_empty() {
-                            Spans::from(Span::styled(
+                            Line::from(Span::styled(
                                 format!("Due: {}", parsed_due_date),
                                 app.theme.card_due_default_style,
                             ))
@@ -1960,17 +1960,17 @@ where
                             };
                             if days_left >= 0 {
                                 match days_left.cmp(&(app.config.warning_delta as i64)) {
-                                    Ordering::Less | Ordering::Equal => Spans::from(Span::styled(
+                                    Ordering::Less | Ordering::Equal => Line::from(Span::styled(
                                         format!("Due: {}", parsed_due_date),
                                         app.theme.card_due_warning_style,
                                     )),
-                                    Ordering::Greater => Spans::from(Span::styled(
+                                    Ordering::Greater => Line::from(Span::styled(
                                         format!("Due: {}", parsed_due_date),
                                         app.theme.card_due_default_style,
                                     )),
                                 }
                             } else {
-                                Spans::from(Span::styled(
+                                Line::from(Span::styled(
                                     format!("Due: {}", parsed_due_date),
                                     app.theme.card_due_overdue_style,
                                 ))
@@ -1978,12 +1978,12 @@ where
                         }
                     }
                 } else if app.state.popup_mode.is_some() {
-                    Spans::from(Span::styled(
+                    Line::from(Span::styled(
                         format!("Due: {}", card_due_date),
                         app.theme.inactive_text_style,
                     ))
                 } else {
-                    Spans::from(Span::styled(
+                    Line::from(Span::styled(
                         format!("Due: {}", card_due_date),
                         app.theme.card_due_default_style,
                     ))
@@ -1993,19 +1993,19 @@ where
 
             let card_status = format!("Status: {}", card.card_status.clone());
             let card_status = if app.state.popup_mode.is_some() {
-                Spans::from(Span::styled(card_status, app.theme.inactive_text_style))
+                Line::from(Span::styled(card_status, app.theme.inactive_text_style))
             } else {
                 match card.card_status {
-                    CardStatus::Active => Spans::from(Span::styled(
+                    CardStatus::Active => Line::from(Span::styled(
                         card_status,
                         app.theme.card_status_active_style,
                     )),
-                    CardStatus::Complete => Spans::from(Span::styled(
+                    CardStatus::Complete => Line::from(Span::styled(
                         card_status,
                         app.theme.card_status_completed_style,
                     )),
                     CardStatus::Stale => {
-                        Spans::from(Span::styled(card_status, app.theme.card_status_stale_style))
+                        Line::from(Span::styled(card_status, app.theme.card_status_stale_style))
                     }
                 }
             };
@@ -2145,8 +2145,8 @@ where
     rect.render_widget(title, chunks[0]);
 
     let error_text_spans = vec![
-        Spans::from(Span::styled(msg, app.theme.error_text_style)),
-        Spans::from(Span::styled(
+        Line::from(Span::styled(msg, app.theme.error_text_style)),
+        Line::from(Span::styled(
             "Resize the window to continue, or press 'q' to quit.",
             app.theme.general_style,
         )),
@@ -2170,7 +2170,7 @@ where
     let title = draw_title(app, *size);
     rect.render_widget(title, chunks[0]);
 
-    let text = Spans::from(vec![
+    let text = Line::from(vec![
         Span::styled("Loading......", app.theme.keyboard_focus_style),
         Span::styled("`(*>﹏<*)′", app.theme.keyboard_focus_style),
         Span::styled("Please wait", app.theme.keyboard_focus_style),
@@ -2328,14 +2328,14 @@ where
         textwrap::wrap(&app.state.new_board_form[0], (chunks[1].width - 2) as usize);
     let board_name_field = wrapped_title_text
         .iter()
-        .map(|x| Spans::from(Span::raw(&**x)))
-        .collect::<Vec<Spans>>();
+        .map(|x| Line::from(Span::raw(&**x)))
+        .collect::<Vec<Line>>();
     let wrapped_description_text =
         textwrap::wrap(&app.state.new_board_form[1], (chunks[2].width - 2) as usize);
     let board_description_field = wrapped_description_text
         .iter()
-        .map(|x| Spans::from(Span::raw(&**x)))
-        .collect::<Vec<Spans>>();
+        .map(|x| Line::from(Span::raw(&**x)))
+        .collect::<Vec<Line>>();
 
     let board_name = Paragraph::new(board_name_field)
         .alignment(Alignment::Left)
@@ -2381,7 +2381,7 @@ where
         .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
         .clone();
 
-    let help_text = Spans::from(vec![
+    let help_text = Line::from(vec![
         Span::styled("Press ", help_text_style),
         Span::styled(input_mode_key, help_key_style),
         Span::styled("or ", help_text_style),
@@ -2559,20 +2559,20 @@ where
         textwrap::wrap(&app.state.new_card_form[0], (chunks[1].width - 2) as usize);
     let card_name_field = wrapped_card_name_text
         .iter()
-        .map(|x| Spans::from(Span::raw(&**x)))
-        .collect::<Vec<Spans>>();
+        .map(|x| Line::from(Span::raw(&**x)))
+        .collect::<Vec<Line>>();
     let wrapped_card_description_text =
         textwrap::wrap(&app.state.new_card_form[1], (chunks[2].width - 2) as usize);
     let card_description_field = wrapped_card_description_text
         .iter()
-        .map(|x| Spans::from(Span::raw(&**x)))
-        .collect::<Vec<Spans>>();
+        .map(|x| Line::from(Span::raw(&**x)))
+        .collect::<Vec<Line>>();
     let wrapped_card_due_date_text =
         textwrap::wrap(&app.state.new_card_form[2], (chunks[3].width - 2) as usize);
     let card_due_date_field = wrapped_card_due_date_text
         .iter()
-        .map(|x| Spans::from(Span::raw(&**x)))
-        .collect::<Vec<Spans>>();
+        .map(|x| Line::from(Span::raw(&**x)))
+        .collect::<Vec<Line>>();
     let card_name = Paragraph::new(card_name_field)
         .alignment(Alignment::Left)
         .block(
@@ -2612,7 +2612,7 @@ where
             .constraints([Constraint::Percentage(70), Constraint::Length(20)].as_ref())
             .split(chunks[3]);
         rect.render_widget(card_due_date, new_chunks[0]);
-        let error_text = Spans::from(vec![Span::raw("Invalid date format")]);
+        let error_text = Line::from(vec![Span::raw("Invalid date format")]);
         let error_paragraph = Paragraph::new(error_text)
             .alignment(Alignment::Center)
             .block(
@@ -2648,7 +2648,7 @@ where
         .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
         .clone();
 
-    let help_spans = Spans::from(vec![
+    let help_spans = Line::from(vec![
         Span::styled("Press ", help_text_style),
         Span::styled(input_mode_key, help_key_style),
         Span::styled("or ", help_text_style),
@@ -2868,7 +2868,7 @@ where
         .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
         .clone();
 
-    let help_text = Spans::from(vec![
+    let help_text = Line::from(vec![
         Span::styled("Use ", help_text_style),
         Span::styled(&up_key, help_key_style),
         Span::styled("or ", help_text_style),
@@ -3059,8 +3059,8 @@ where
             ((rect.size().width / SCREEN_TO_TOAST_WIDTH_RATIO) - 2) as usize,
         )
         .iter()
-        .map(|x| Spans::from(x.to_string()))
-        .collect::<Vec<Spans>>();
+        .map(|x| Line::from(x.to_string()))
+        .collect::<Vec<Line>>();
         let toast_height = lines.len() as u16 + 2;
         let toast_block = Block::default()
             .title(toast_title)
@@ -3217,8 +3217,8 @@ where
         textwrap::wrap(&card_description, (card_chunks[1].width - 2) as usize);
     let wrapped_description_spans = wrapped_description
         .iter()
-        .map(|x| Spans::from(Span::styled(&**x, app.theme.general_style)))
-        .collect::<Vec<Spans>>();
+        .map(|x| Line::from(Span::styled(&**x, app.theme.general_style)))
+        .collect::<Vec<Line>>();
     let main_block = Block::default()
         .title(format!("{} >> Board({})", card_name, board_name))
         .borders(Borders::ALL)
@@ -3366,12 +3366,12 @@ where
         Span::styled(card_status, app.theme.general_style)
     };
     let card_extra_info_items = vec![
-        ListItem::new(vec![Spans::from(card_date_created)]),
-        ListItem::new(vec![Spans::from(card_date_modified)]),
-        ListItem::new(vec![Spans::from(card_due_date_styled)]),
-        ListItem::new(vec![Spans::from(card_date_completed)]),
-        ListItem::new(vec![Spans::from(card_priority_styled)]),
-        ListItem::new(vec![Spans::from(card_status_styled)]),
+        ListItem::new(vec![Line::from(card_date_created)]),
+        ListItem::new(vec![Line::from(card_date_modified)]),
+        ListItem::new(vec![Line::from(card_due_date_styled)]),
+        ListItem::new(vec![Line::from(card_date_completed)]),
+        ListItem::new(vec![Line::from(card_priority_styled)]),
+        ListItem::new(vec![Line::from(card_status_styled)]),
     ];
     if check_if_mouse_is_in_area(app.state.current_mouse_coordinates, card_chunks[2]) {
         let top_of_list = card_chunks[2].y + 1;
@@ -3532,7 +3532,7 @@ where
             collector.push_str(&tag_string);
             collector_end = i + 1;
         } else {
-            card_tag_spans.push(Spans::from(
+            card_tag_spans.push(Line::from(
                 card_tags[collector_start..collector_end].to_vec(),
             ));
             collector = String::new();
@@ -3542,7 +3542,7 @@ where
         }
     }
     if !collector.is_empty() {
-        card_tag_spans.push(Spans::from(
+        card_tag_spans.push(Line::from(
             card_tags[collector_start..collector_end].to_vec(),
         ));
     }
@@ -3557,7 +3557,7 @@ where
             collector.push_str(&comment_string);
             collector_end = i + 1;
         } else {
-            card_comment_spans.push(Spans::from(
+            card_comment_spans.push(Line::from(
                 card_comments[collector_start..collector_end].to_vec(),
             ));
             collector = String::new();
@@ -3567,7 +3567,7 @@ where
         }
     }
     if !collector.is_empty() {
-        card_comment_spans.push(Spans::from(
+        card_comment_spans.push(Line::from(
             card_comments[collector_start..collector_end].to_vec(),
         ));
     }
@@ -3934,14 +3934,14 @@ where
                     spans.push(Span::styled(c.to_string(), command_search_text_style));
                 }
             }
-            list_items.push(ListItem::new(Spans::from(spans)));
+            list_items.push(ListItem::new(Line::from(spans)));
         }
         list_items
     } else {
         app.command_palette
             .available_commands
             .iter()
-            .map(|c| ListItem::new(Spans::from(format!("Command - {}", c))))
+            .map(|c| ListItem::new(Line::from(format!("Command - {}", c))))
             .collect::<Vec<ListItem>>()
     };
 
@@ -3957,7 +3957,7 @@ where
             } else {
                 item.to_string()
             };
-            list_items.push(ListItem::new(Spans::from(Span::styled(
+            list_items.push(ListItem::new(Line::from(Span::styled(
                 item.to_string(),
                 card_search_text_style,
             ))));
@@ -3979,7 +3979,7 @@ where
             } else {
                 item.to_string()
             };
-            list_items.push(ListItem::new(Spans::from(Span::styled(
+            list_items.push(ListItem::new(Line::from(Span::styled(
                 item.to_string(),
                 board_search_text_style,
             ))));
@@ -4062,11 +4062,11 @@ where
         .split(horizontal_chunks[1]);
 
     let search_box_text = if app.state.current_user_input.is_empty() {
-        vec![Spans::from(
+        vec![Line::from(
             "Start typing to search for a command, card or board!",
         )]
     } else {
-        vec![Spans::from(app.state.current_user_input.clone())]
+        vec![Line::from(app.state.current_user_input.clone())]
     };
 
     let current_cursor_position = if app.state.current_cursor_position.is_some() {
@@ -4189,7 +4189,7 @@ where
         .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
         .clone();
 
-    let help_spans = Spans::from(vec![
+    let help_spans = Line::from(vec![
         Span::styled("Use ", app.theme.help_text_style),
         Span::styled(up_key, app.theme.help_key_style),
         Span::styled("and ", app.theme.help_text_style),
@@ -4253,7 +4253,7 @@ where
 {
     let all_ui_modes = UiMode::all()
         .iter()
-        .map(|s| ListItem::new(vec![Spans::from(s.as_str().to_string())]))
+        .map(|s| ListItem::new(vec![Line::from(s.as_str().to_string())]))
         .collect::<Vec<ListItem>>();
 
     let percent_height =
@@ -4302,7 +4302,7 @@ where
     let all_date_formats = DateFormat::get_all_date_formats();
     let all_date_formats = all_date_formats
         .iter()
-        .map(|s| ListItem::new(vec![Spans::from(s.to_human_readable_string().to_string())]))
+        .map(|s| ListItem::new(vec![Line::from(s.to_human_readable_string().to_string())]))
         .collect::<Vec<ListItem>>();
 
     let percent_height =
@@ -4373,7 +4373,7 @@ where
     }
     let all_statuses = CardStatus::all()
         .iter()
-        .map(|s| ListItem::new(vec![Spans::from(s.to_string())]))
+        .map(|s| ListItem::new(vec![Line::from(s.to_string())]))
         .collect::<Vec<ListItem>>();
     let percent_height =
         (((all_statuses.len() + 3) as f32 / rect.size().height as f32) * 100.0) as u16;
@@ -4444,7 +4444,7 @@ where
     }
     let all_priorities = CardPriority::all()
         .iter()
-        .map(|p| ListItem::new(vec![Spans::from(p.to_string())]))
+        .map(|p| ListItem::new(vec![Line::from(p.to_string())]))
         .collect::<Vec<ListItem>>();
     let percent_height =
         (((all_priorities.len() + 3) as f32 / rect.size().height as f32) * 100.0) as u16;
@@ -4548,12 +4548,12 @@ where
             .iter()
             .map(|tag| {
                 if selected_tags.contains(&tag.0) {
-                    ListItem::new(vec![Spans::from(vec![Span::styled(
+                    ListItem::new(vec![Line::from(vec![Span::styled(
                         format!("(Selected) {} - {} occurrences", tag.0, tag.1),
                         app.theme.list_select_style,
                     )])])
                 } else {
-                    ListItem::new(vec![Spans::from(vec![Span::styled(
+                    ListItem::new(vec![Line::from(vec![Span::styled(
                         format!("{} - {} occurrences", tag.0, tag.1),
                         app.theme.general_style,
                     )])])
@@ -4611,7 +4611,7 @@ where
             .unwrap_or(&vec!["".to_string(), "".to_string()])[0]
             .clone();
 
-        let help_spans = Spans::from(vec![
+        let help_spans = Line::from(vec![
             Span::styled("Use ", app.theme.help_text_style),
             Span::styled(up_key, app.theme.help_key_style),
             Span::styled("and ", app.theme.help_text_style),
@@ -4747,12 +4747,12 @@ where
         .iter()
         .map(|s| {
             if s.len() > menu_area.width as usize - 2 {
-                Spans::from(format!("{}{}", &s[..menu_area.width as usize - 5], "..."))
+                Line::from(format!("{}{}", &s[..menu_area.width as usize - 5], "..."))
             } else {
-                Spans::from(s.to_string())
+                Line::from(s.to_string())
             }
         })
-        .collect::<Vec<Spans>>();
+        .collect::<Vec<Line>>();
     let debug_panel = Paragraph::new(strings).block(
         Block::default()
             .title("Debug Panel")
@@ -4793,7 +4793,7 @@ where
             app.theme.error_text_style
         };
     // render a X in the top right corner of the rect
-    let close_btn = Paragraph::new(vec![Spans::from("X")])
+    let close_btn = Paragraph::new(vec![Line::from("X")])
         .block(
             Block::default()
                 .borders(Borders::ALL)
@@ -4811,7 +4811,7 @@ where
     let theme_list = app
         .all_themes
         .iter()
-        .map(|t| ListItem::new(vec![Spans::from(t.name.clone())]))
+        .map(|t| ListItem::new(vec![Line::from(t.name.clone())]))
         .collect::<Vec<ListItem>>();
     if check_if_mouse_is_in_area(app.state.current_mouse_coordinates, popup_area) {
         app.state.mouse_focus = Some(Focus::ThemeSelector);
@@ -4939,7 +4939,7 @@ where
         chunks[1],
         &mut app.state.theme_editor_state,
     );
-    let submit_button = Paragraph::new(vec![Spans::from("Create Theme")])
+    let submit_button = Paragraph::new(vec![Line::from("Create Theme")])
         .block(
             Block::default()
                 .borders(Borders::ALL)
@@ -4948,7 +4948,7 @@ where
         .alignment(Alignment::Center);
     rect.render_widget(submit_button, button_chunks[0]);
 
-    let reset_button = Paragraph::new(vec![Spans::from("Reset")])
+    let reset_button = Paragraph::new(vec![Line::from("Reset")])
         .block(
             Block::default()
                 .borders(Borders::ALL)
@@ -5071,7 +5071,7 @@ where
                         let g = split_input.clone().nth(1).unwrap().parse::<u8>().unwrap();
                         let b = split_input.clone().nth(2).unwrap().parse::<u8>().unwrap();
                         fg_style.fg = Some(ratatui::style::Color::Rgb(r, g, b));
-                        return ListItem::new(vec![Spans::from(vec![
+                        return ListItem::new(vec![Line::from(vec![
                             Span::styled("Sample Text", fg_style),
                             Span::styled(
                                 format!(" - RGB({},{},{})", r, g, b),
@@ -5083,12 +5083,12 @@ where
             }
             return if color.to_color().is_some() {
                 fg_style.fg = Some(color.to_color().unwrap());
-                ListItem::new(vec![Spans::from(vec![
+                ListItem::new(vec![Line::from(vec![
                     Span::styled("Sample Text", fg_style),
                     Span::styled(format!(" - {}", color), app.theme.general_style),
                 ])])
             } else {
-                ListItem::new(vec![Spans::from(vec![
+                ListItem::new(vec![Line::from(vec![
                     Span::raw("Sample Text"),
                     Span::styled(format!(" - {}", color), app.theme.general_style),
                 ])])
@@ -5128,7 +5128,7 @@ where
                         let g = split_input.clone().nth(1).unwrap().parse::<u8>().unwrap();
                         let b = split_input.clone().nth(2).unwrap().parse::<u8>().unwrap();
                         bg_style.bg = Some(ratatui::style::Color::Rgb(r, g, b));
-                        return ListItem::new(vec![Spans::from(vec![
+                        return ListItem::new(vec![Line::from(vec![
                             Span::styled("Sample Text", bg_style),
                             Span::styled(
                                 format!(" - RGB({},{},{})", r, g, b),
@@ -5140,12 +5140,12 @@ where
             }
             return if color.to_color().is_some() {
                 bg_style.bg = Some(color.to_color().unwrap());
-                ListItem::new(vec![Spans::from(vec![
+                ListItem::new(vec![Line::from(vec![
                     Span::styled("Sample Text", bg_style),
                     Span::styled(format!(" - {}", color), app.theme.general_style),
                 ])])
             } else {
-                ListItem::new(vec![Spans::from(vec![
+                ListItem::new(vec![Line::from(vec![
                     Span::raw("Sample Text"),
                     Span::styled(format!(" - {}", color), app.theme.general_style),
                 ])])
@@ -5167,7 +5167,7 @@ where
                 add_modifier: modifier.to_modifier(),
                 ..Style::default()
             };
-            ListItem::new(vec![Spans::from(vec![
+            ListItem::new(vec![Line::from(vec![
                 Span::styled("Sample Text", modifier_style),
                 Span::styled(format!(" - {}", modifier), app.theme.general_style),
             ])])
@@ -5261,7 +5261,7 @@ where
         Span::styled("to change focus.", app.theme.help_text_style),
     ];
 
-    let help_text = Paragraph::new(Spans::from(help_spans))
+    let help_text = Paragraph::new(Line::from(help_spans))
         .block(
             Block::default()
                 .borders(Borders::ALL)
@@ -5513,7 +5513,7 @@ where
         Span::styled("<Enter>", app.theme.help_key_style),
         Span::styled(" to submit.", app.theme.help_text_style),
     ];
-    let help_text = Paragraph::new(Spans::from(help_spans))
+    let help_text = Paragraph::new(Line::from(help_spans))
         .block(Block::default().borders(Borders::ALL))
         .alignment(Alignment::Center)
         .wrap(ratatui::widgets::Wrap { trim: true });
